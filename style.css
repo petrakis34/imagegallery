@@ -1,0 +1,98 @@
+/*CSS Image Gallery*/
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: tahoma;
+}
+
+#wrapper {
+	width: 100%;
+	height:800px;
+	background-color: #FFFFFF;
+}
+
+header {
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+main {
+	width: 100%;
+	height:90%;
+}
+
+footer {
+	width: 100%;
+	height:30px;
+	background-color: grey;
+	text-align: center;
+	padding-top: 15px;
+}
+
+#container {
+	width:100%;
+	height: 70%;
+	padding-top: 20px;
+}
+
+#thumbnails {
+	width: 658px;
+	height:15%;
+	border-top: 1px black dashed;
+	margin-left: 25%;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px black dashed;
+}
+
+#thumbnails img {
+	width:160px;
+	height: 100px;
+}
+
+#previous {
+	width: 10%;
+	height:100%;
+	float: left;
+	margin-left: 10%;
+}
+
+#imagerow {
+	width:650px;
+	height: 480px;
+	float: left;
+	margin-left: 5%;
+	box-shadow: 5px 5px 5px grey;
+}
+
+
+#next {
+	width: 10%;
+	height:100%;
+	float: left;
+	margin-left: 5%;
+}
+
+#imagerow img {
+	width:650px;
+	height: 480px;
+
+}
+
+#next img {
+	width:63%;
+	padding-top: 200px;
+}
+
+#previous img {
+	width:65%;
+	padding-top: 200px;
+}
+
+#buttons {
+	margin-left: 43%;
+	margin-top: 10px;
+}

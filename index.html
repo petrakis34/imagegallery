@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Image Gallery</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h3>Image Gallery - ΠΕΤΡΑΚΗΣ ΝΙΚΟΛΑΟΣ</h3>
+			</header>
+
+			<main>
+				<div id="container">
+
+					<div id="previous"> 
+						<a href="#"><img src="images/back.png" id="backbutton" onclick="prevImage()"></a><!--  set onclick to move slider backward -->
+					</div>
+
+					<div id="imagerow">
+
+						<a href="#"><img src="images/sea1.jpg" id="mainphoto"></a>
+
+					</div>
+
+					<div id="next">
+						<a href="#"><img src="images/next.png" id="nextbutton" onclick="nextImage()"></a> <!-- set onclick to move slider forward -->
+					</div>
+
+				</div>
+
+				<div id="thumbnails">				
+					<a href="#"><img src="images/sea1.jpg" class="thumbnl" onclick="myImage(this.src)"></a><!--  here we set the function to get the source of each image -->
+					<a href="#"><img src="images/sea2.jpg" class="thumbnl" onclick="myImage(this.src)"></a>
+					<a href="#"><img src="images/sea3.jpg" class="thumbnl" onclick="myImage(this.src)"></a>
+					<a href="#"><img src="images/sea4.jpg" class="thumbnl" onclick="myImage(this.src)"></a>
+				</div>
+
+				<div id="buttons">
+					<button type="button" id="buttonplay" onclick="startImage()">PLAY</button><!--  here we set the function to start slishow -->
+					<button type="button" id="buttonstop" onclick="stopImage()">STOP</button><!--  here we set the function to stop slishow -->
+					<select id="selectid">
+						<option value="val1" id="valid1">1 sec</option>
+						<!--  here we set individual id to set individual functions for timer with setinterval -->
+						<option value="val2" id="valid2">3 sec</option>
+						<option value="val3" id="valid3">5 sec</option>
+					</select>
+					<button type="button" id="buttonrandom" onclick="randomImage(this.src)">Random</button> <!-- here we set the random function with onclick to randomly show our pictures-->
+				</div>
+			</main>
+
+			<footer>
+				<p> Copyright Nikolaos Petrakis 2016</p>
+			</footer>
+		</div>
+	</body>
+</html>
